@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Elementor assignment</title>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<div id="container">
+		 <div class="items-container">
+		 	<h2>Rendered in html</h2>
+			<div class="wrap">
+				<div class="card" data-item-id="1">
+					<h3>Item 3</h3>
+					<div class="imgContainer">
+						<img src="./img/item3.jpg" alt="item 3">
+					</div>
+					<button onclick="getData(3);">Submit</button>
+				</div>
+				<div class="card" data-item-id="2">
+					<h3>Item 1</h3>
+					<div class="imgContainer">
+						<img src="./img/item1.jpg" alt="item 1">
+					</div>
+					<button onclick="getData(1);">Submit</button>
+				</div>
+				<div class="card" data-item-id="3">
+					<h3>Item 2</h3>
+					<div class="imgContainer">
+						<img src="./img/item2.jpg" alt="item 2">
+					</div>
+					<button onclick="getData(2);">Submit</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="items-container">
+			<h2>Rendered in pure javascript to handle array of items (api ready)</h2>
+			<div id="itemList2" class="wrap"></div>
+		</div>
+
+	</div>
+	<div class="overlay">
+		<div class="overlay-content">
+			<a href="javascript:void(0)" class="closebtn" onclick="popup(false)">&times;</a>
+			<div class="pop-container">
+				<p id="pop-description"></p>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="./js/main.js"></script>
+</body>
+</html>
